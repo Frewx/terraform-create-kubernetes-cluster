@@ -30,6 +30,10 @@ This terraform code will provision an AKS service on Azure like detailed below:
   ```bash
   terraform plan
   ```
+1. Apply your terraform configuration
+  ```bash
+    terraform apply
+  ```
 1. After some time (6-7 mins.) Terraform will create AKS. Get the kubeconfig with
   ```bash
   terraform output -raw kubeconfig > aks_kubeconfig
